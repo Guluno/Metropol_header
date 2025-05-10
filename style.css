@@ -1,0 +1,126 @@
+/* RESET BODY STYLING */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* ===== NEWS BAR ===== */
+  .news-bar {
+    background-color: #004080;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1001;
+  }
+  
+  /* ===== HEADER BAR ===== */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 24px; /* doubled height */
+    background-color: #e0f0ff; /* light blue */
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 40px;
+    z-index: 1000;
+  }
+  
+  /* ===== LOGO ===== */
+  .logo img {
+    height: 50px;
+  }
+  
+  /* ===== NAVIGATION ===== */
+  .navbar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    position: relative;
+  }
+  
+  /* BUTTON STYLE FOR NAV LINKS */
+  .nav-links a {
+    display: inline-block;
+    padding: 10px 16px;
+    font-size: 15px;
+    color: #0077cc;
+    text-decoration: none;
+    border: 1px solid #0077cc;
+    border-radius: 6px;
+    background-color: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  /* HOVER EFFECT */
+  .nav-links a:hover {
+    background-color: #0077cc;
+    color: white;
+  }
+  
+  /* MAKE HIGHLIGHT STICK ON HOME */
+  .nav-links a.active {
+    background-color: #0077cc;
+    color: white;
+  }
+  
+  /* ===== DROPDOWN MENU ===== */
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    min-width: 180px;
+    z-index: 999;
+  }
+  
+  .dropdown-menu li {
+    width: 100%;
+  }
+  
+  .dropdown-menu a {
+    padding: 10px 15px;
+    display: block;
+    color: #0077cc;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #f0f0f0;
+    color: #0077cc;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  /* ===== CLOCK STYLING ===== */
+  .clock {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #f0f8ff;
+    color: #0077cc;
+    border: 2px solid #0077cc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+  }
+  

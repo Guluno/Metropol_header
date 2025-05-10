@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Metropol Header</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NEWS BAR -->
+  <div class="news-bar">
+    Willkommen bei Metropol – Aktuelle Informationen und Ankündigungen finden Sie hier.
+  </div>
+
+  <!-- MAIN HEADER -->
+  <header class="header">
+    <!-- LEFT: Logo -->
+    <div class="logo">
+      <img src="metropol-logo.png" alt="Metropol Logo" />
+    </div>
+
+    <!-- CENTER: Navigation Menu -->
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a class="active" href="#">Home</a></li>
+
+        <li class="dropdown">
+          <a href="#">Über Uns</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Wir sind</a></li>
+            <li><a href="#">Unsere Werte</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">Mission und Vision</a></li>
+        <li><a href="#">Unsere Angebote</a></li>
+
+        <li class="dropdown">
+          <a href="#">Projekte</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Erstaufnahme</a></li>
+            <li><a href="#">Clearingeinrichtung</a></li>
+            <li><a href="#">Aktuelle Projekte</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">Karriere</a></li>
+      </ul>
+    </nav>
+
+    <!-- RIGHT: Digital Clock -->
+    <div class="clock" id="digitalClock"></div>
+  </header>
+
+  <!-- JavaScript for Clock -->
+  <script>
+    function updateClock() {
+      const now = new Date();
+      const h = String(now.getHours()).padStart(2, '0');
+      const m = String(now.getMinutes()).padStart(2, '0');
+      const s = String(now.getSeconds()).padStart(2, '0');
+      document.getElementById('digitalClock').textContent = `${h}:${m}:${s}`;
+    }
+    updateClock();
+    setInterval(updateClock, 1000);
+  </script>
+</body>
+</html>
